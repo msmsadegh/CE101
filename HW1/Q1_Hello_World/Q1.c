@@ -1,8 +1,7 @@
 #include <stdio.h>
 //Todo: Q1
 int main() {
-    printf("hello, world""\n"
-           "hello, world");
+    printf("hello, world\nhello, world");
     return 0;
 }
 // Todo: Q2 Error Checking
