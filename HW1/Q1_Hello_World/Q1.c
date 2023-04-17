@@ -6,7 +6,6 @@ int main() {
     printf("hello, world\\hello, world");
     printf("hello, world\"hello, world");
 //    printf("hello, world\chello, world");
-
     return 0;
 }
 // Todo: Q2 Error Checking
