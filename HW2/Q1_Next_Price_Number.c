@@ -17,7 +17,7 @@ int main() {
     printf("Enter an integer: ");
     scanf("%d", &n);
     prime = n + 1;
-
+    // Todo: Check wether between -1000 and 1000 or not and handle this
     while (!isPrime(prime)) {
         prime++;
     }
