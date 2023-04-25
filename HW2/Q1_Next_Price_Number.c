@@ -13,16 +13,20 @@ int isPrime(int num) {
 }
 
 int main() {
-    int n, prime;
+    int inputNum, prime;
     printf("Enter an integer: ");
-    scanf("%d", &n);
-    prime = n + 1;
-    // Todo: Check whether between -1000 and 1000 or not and handle this
+    scanf("%d", &inputNum);
+    prime = inputNum + 1;
+    // Check whether between -1000 and 1000 or not and handle this
+    if ((-1000 > inputNum) || (inputNum > 1000)){
+        printf("Your Entire value is not true");
+        return 1;
+    }
     while (!isPrime(prime)) {
         prime++;
     }
 
-    printf("The first prime number after %d is %d", n, prime);
+    printf("The first prime number after %d is %d", inputNum, prime);
 
     return 0;
 }
