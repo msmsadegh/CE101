@@ -19,7 +19,7 @@ int main() {
     prime = inputNum + 1;
     // Check whether between -1000 and 1000 or not and handle this
     if ((-1000 > inputNum) || (inputNum > 1000)){
-        printf("Your Entire value is not true");
+        printf("Your entire value is not true");
         return 1;
     }
     while (!isPrime(prime)) {
