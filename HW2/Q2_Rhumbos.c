@@ -1,9 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
     int rows,space,star=1,space_prime,num;
-    scanf("%d\n%d",&num,&rows);
+    printf("Enter the number of rhombuses to print (1-4):");
+    scanf("%d",&num);
+    printf("Enter the diameter of each rhombus (odd number between 1-15):");
+    scanf("%d",&rows);
+    if (rows % 2 == 0) {
+        printf("Diameter must be an odd number!\n");
+        return 1;
+    }
+    if ((1 > num) || (num > 4)) {
+        printf("Invalid Input");
+        return 1;
+    }
+    if ((1 > rows) || (rows > 15)) {
+        printf("Invalid Input");
+        return 1;
+    }
+    system("clear");
     space_prime = rows;
     space = rows/2;
     for(int  i = 0;i<rows;i++){
